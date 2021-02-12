@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" sr="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+    body {background-color: powderblue; width: 350px;}
+    div.container {min-height: 250px;}
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 200px;
+      margin: 10px;
+      -webkit-appearance: none;
+      background-color: #a4a4a4;
+    }    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 15px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 15px;
+      cursor: ew-resize;
+    }
+    input#Rrange[type='range']::-webkit-slider-thumb{
+        background: #ff0000;
+        box-shadow: -200px 0 0 200px #ff9999;
+    }
+    input#Grange[type='range']::-webkit-slider-thumb{
+        background: #009a00;
+        box-shadow: -200px 0 0 200px #00ff5e;
+    }
+    input#Brange[type='range']::-webkit-slider-thumb{
+        background: #0000ff;
+        box-shadow: -200px 0 0 200px #2a83ff;
+    }
+    .R{display: inline;}
+    .G{display: inline;}
+    .B{display: inline;}
+}
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Bootstrap 4 Page</h1>
+        <p>Resize this responsive page to see the effect!</p> 
+      </div>
+      
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+
+<div class="container">
+  <h2>Form Control Range</h2>
+  <form action="/action_page.php">
+        <input type="range" class="form-control-range R" name="Rrangen" id="Rrange" min="0" max="255">
+        <label id="RrangeLabel" for="Rrangen">128</label>
+        <input type="range" class="form-control-range G" name="Grangen" id="Grange" min="0" max="255">
+        <label id="GrangeLabel" for="Grangen">128</label>
+        <input type="range" class="form-control-range B" name="Brangen" id="Brange" min="0" max="255">
+        <label id="BrangeLabel" for="Brangen">128</label>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<script src="pop.js"></script>
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer</p>
+</div>
+</body>
+</html>

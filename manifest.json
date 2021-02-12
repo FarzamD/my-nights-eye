@@ -1,0 +1,19 @@
+{
+    "name": "night eye",
+    "description": "description",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"]
+    },
+    
+    "browser_action": {
+        "default_popup": "demo.html",
+        "default_icon": "SNAP.png"
+    },
+    "permissions": [
+        "tabs",
+        "https://www.google.com/*",
+        "storage"
+    ] 
+}
