@@ -1,0 +1,84 @@
+/* 
+    header
+*/
+*{padding: 0; margin: 0; box-sizing: border-box;}
+header {
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+  background-image: linear-gradient( 135deg,rgba(210, 88, 0, 0.847) 15%, #3200b0e4 100%);
+	
+}
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+    min-height: 55px;
+	margin-bottom: 10px;
+    background: linear-gradient(rgb(150, 150, 150), white, rgb(150, 150, 150));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* 
+footer
+*/
+footer div{
+  color: rgb(156, 156, 156);
+  background-color: rgb(45, 45, 45);
+  border-radius: 0px 0px 4px 4px;
+}
+
+
+
+/* 
+sliders
+*/
+body {background-color: powderblue; width: 290px;}
+div.container {min-height: 275px; padding: 10px 5px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+input[type='range'] {
+  overflow: hidden;
+  width: 225px;
+  margin: 3px;
+  -webkit-appearance: none;
+  background-color: #a4a4a4;
+}    
+input[type='range']::-webkit-slider-runnable-track {
+  height: 15px;
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 15px;
+  cursor: ew-resize;
+}
+input#Rrange[type='range']::-webkit-slider-thumb{
+    background: #cd0000;
+    box-shadow: -200px 0 0 200px #ff4a4aba;
+}
+input#Grange[type='range']::-webkit-slider-thumb{
+    background: #008500;
+    box-shadow: -200px 0 0 200px #00d419;
+}
+input#Brange[type='range']::-webkit-slider-thumb{
+    background: #0000ff;
+    box-shadow: -200px 0 0 200px #2a83ff;
+}
+.R{display: inline;}
+.G{display: inline;}
+.B{display: inline;}
+}
