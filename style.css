@@ -1,9 +1,14 @@
+/*
+bootstrap grid
+*/
+.row{
+  display: flex;
+}
 /* 
     header
 */
 *{padding: 0; margin: 0; box-sizing: border-box;}
 header {
-	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
 	text-align: center;
 	width: 100%;
 	height: auto;
@@ -32,23 +37,42 @@ h1 {
 /* 
 footer
 */
+footer div p{
+  margin: 0em;
+}
 footer div{
   color: rgb(156, 156, 156);
   background-color: rgb(45, 45, 45);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 6px 6px;
 }
-
-
-
+div#footer{
+  background-image: linear-gradient(59deg, #3A6073,#16222A);
+  min-height: 40px;
+}
+div#footer h2{
+  font: 500 18px 'Helvetica Neue, Helvetica, Arial, sans-serif';
+  color: rgb(232, 232, 232);
+}
+div#footer p{
+  color: rgb(172, 172, 172);
+  font: 500 14px 'Helvetica Neue, Helvetica, Arial, sans-serif';
+  margin: 0px;
+}
+div#footer div.row{
+  margin: 0 -4px;
+}
+div#footer div.row div{
+  padding: 0 4px 0 4px;
+}
 /* 
 sliders
 */
-body {background-color: powderblue; width: 290px;}
-div.container {min-height: 275px; padding: 10px 5px;}
+body {background-color: powderblue; width: 360px; border-radius:0px 0px 8px 8px ;}
+div.container {min-height: 340px; padding: 10px 5px;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 input[type='range'] {
   overflow: hidden;
-  width: 225px;
+  width: 280px;
   margin: 3px;
   -webkit-appearance: none;
   background-color: #a4a4a4;
@@ -68,17 +92,17 @@ input[type='range']::-webkit-slider-thumb {
 }
 input#Rrange[type='range']::-webkit-slider-thumb{
     background: #cd0000;
-    box-shadow: -200px 0 0 200px #ff4a4aba;
+    box-shadow: -250px 0 0 250px #ff4a4aba;
 }
 input#Grange[type='range']::-webkit-slider-thumb{
     background: #008500;
-    box-shadow: -200px 0 0 200px #00d419;
+    box-shadow: -250px 0 0 250px #00d419;
 }
 input#Brange[type='range']::-webkit-slider-thumb{
     background: #0000ff;
-    box-shadow: -200px 0 0 200px #2a83ff;
+    box-shadow: -250px 0 0 250px #2a83ff;
 }
-.R{display: inline;}
-.G{display: inline;}
-.B{display: inline;}
+.R{ display: inline-block;}
+.G{ display: inline-block;}
+.B{ display: inline-block;}
 }
