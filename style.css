@@ -45,26 +45,40 @@ footer div{
   background-color: rgb(45, 45, 45);
   border-radius: 0px 0px 6px 6px;
 }
-div#footer{
+#footer{
   background-image: linear-gradient(59deg, #3A6073,#16222A);
   min-height: 40px;
 }
-div#footer h2{
+#footer h2{
   font: 500 18px 'Helvetica Neue, Helvetica, Arial, sans-serif';
   color: rgb(232, 232, 232);
 }
-div#footer p{
+#footer p{
   color: rgb(172, 172, 172);
   font: 500 14px 'Helvetica Neue, Helvetica, Arial, sans-serif';
   margin: 0px;
 }
-div#footer div.row{
+#footer div.row{
   margin: 0 -4px;
 }
-div#footer div.row div{
+#footer div.row div{
   padding: 0 4px 0 4px;
 }
-/* 
+#footer a i{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 5px;
+  color: #fff; }
+  a.icoLinkedin :hover {
+    background:rgb(9, 118, 180) ;}
+/* #DD4B39 fa fa-google-plus
+#55ACEE fa fa-twitter
+#337ab7 faceb
+fab fa-telegram-plane
 sliders
 */
 body {background-color: powderblue; width: 360px; border-radius:0px 0px 8px 8px ;}
