@@ -4,6 +4,12 @@ bootstrap grid
 .row{
   display: flex;
 }
+.col-5 {
+  flex-basis:50% ;
+}
+.col-4 {
+  flex-basis: 35% ;
+}
 /* 
     header
 */
@@ -48,6 +54,7 @@ footer div{
 #footer{
   background-image: linear-gradient(59deg, #3A6073,#16222A);
   min-height: 40px;
+  padding: 2px 5px;
 }
 #footer h2{
   font: 500 18px 'Helvetica Neue, Helvetica, Arial, sans-serif';
@@ -66,22 +73,26 @@ footer div{
 }
 #footer a i{
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   text-align: center;
-  line-height: 25px;
+  line-height: 20px;
   margin-right: 5px;
   color: #fff; }
-  a.icoLinkedin :hover {
-    background:rgb(9, 118, 180) ;}
-/* #DD4B39 fa fa-google-plus
+  #icoLinkedin :hover {background:rgb(29, 177, 226) ;}
+  #icoFacebook :hover {background: #3056a2;}
+  #icoTelegram :hover {background:rgb(9, 118, 180) ;}
+  #icoGoogle :hover {background:#DD4B39 ;}
+/*
 #55ACEE fa fa-twitter
-#337ab7 faceb
-fab fa-telegram-plane
+fa fa-phone
+fa fa-map-marker
+fa fa-envelope
 sliders
 */
-body {background-color: powderblue; width: 360px; border-radius:0px 0px 8px 8px ;}
+body {background-color: powderblue; width: 320px;
+   border-radius:0px 0px 8px 8px ;}
 div.container {min-height: 340px; padding: 10px 5px;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 input[type='range'] {

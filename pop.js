@@ -1,4 +1,3 @@
-console.log('check')
 document.getElementById('Rrange').addEventListener("input", function(){
 console.log('Rrange change?');
 document.getElementById('RrangeLabel').innerHTML=document.getElementById('Rrange').value;
